@@ -3,9 +3,14 @@ function promise(){
     }
     
     async function siva(){
-       let three = await promise() 
-       let two = await three.json()
-       console.log(two)
+       try{
+            
+            let three = await promise() 
+            let two = await three.json()
+            console.log(two)
+        }catch{
+            console.log("not working!!")
+        }
     }
     siva()
     
