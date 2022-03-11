@@ -14,6 +14,20 @@ function promise(){
     }
     siva()
     
+async function mulitiplepromise(){
+    let one = await fetch("/data2.json")
+    let oneandhalf = await one.json()
+
+    let two = await fetch('/data3.json')
+    let twoandhalf = await two.json()
+
+    let three = await fetch('/data4.json')
+    let threeandhalf = await three.json()
+
+    console.log(oneandhalf, twoandhalf, threeandhalf)
+}
+mulitiplepromise()
+
     async function custompromise(one){
        let four = await new Promise((res, rej)=>{
           if(one === 10){
