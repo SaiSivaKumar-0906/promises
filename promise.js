@@ -15,16 +15,17 @@ function promise(){
     siva()
     
 async function mulitiplepromise(){
-    let one = await fetch("/data2.json")
-    let oneandhalf = await one.json()
+    
+     let one = await fetch("/data2.json")
 
     let two = await fetch('/data3.json')
-    let twoandhalf = await two.json()
 
     let three = await fetch('/data4.json')
-    let threeandhalf = await three.json()
+    
+    const responses = await Promise.all([one, two, three])
+    const json = await Promise.all(responses.map(t => t.json()))
 
-    console.log(oneandhalf, twoandhalf, threeandhalf)
+    console.log(json)
 }
 mulitiplepromise()
 
