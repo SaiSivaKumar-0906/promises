@@ -1,21 +1,21 @@
 const one = {
-    iLovebackend : uiisdogshit
+    "iLovebackend" : "uiisdogshit"
 }
 
 const two = {
-    everyuidevelopment : isdogshit
+    "everyuidevelopment" : "isdogshit"
 }
 
 
 const three = {
-    yes : everyuiisgarbage
+    "yes" : "everyuiisgarbage"
 }
 
 const four = {
-    webui : isdogshit,
-    mobileui : isdogshit,
-    systemui : isdogshit,
-    uidevelopers : aredogshitdevelopers
+    "webui" : "isdogshit",
+    "mobileui" : "isdogshit",
+    "systemui" : "isdogshit",
+    "uidevelopers" : "aredogshitdevelopers"
 }
 
-console.log(four.mobileui)
+console.log(four)
