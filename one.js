@@ -18,4 +18,6 @@ const four = {
     "uidevelopers" : "aredogshitdevelopers"
 }
 
-console.log(four)
+one.__proto__=two;
+two.__proto__=three;
+three.__proto__=four;
